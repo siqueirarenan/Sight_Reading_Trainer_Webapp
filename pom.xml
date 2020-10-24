@@ -3,16 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sandec.jpro</groupId>
-    <artifactId>hellojpro-maven</artifactId>
+    <artifactId>SightReadMaster</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <jpro.version>2020.1.0</jpro.version>
+        <jfugue.version>5.0.9</jfugue.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <javafx.version>15</javafx.version>
+        <maven.compiler.source>14</maven.compiler.source>
+        <maven.compiler.target>14</maven.compiler.target>
+        <javafx.version>11</javafx.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -25,6 +26,14 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
+<!--            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <verbose>true</verbose>
+                <fork>true</fork>
+                <executable>${JAVA_HOME}/bin/javac</executable>
+                <compilerVersion>1.3</compilerVersion>
+            </configuration>-->
         </plugin>
 
         <plugin>
@@ -36,7 +45,7 @@
                 <JVMArgs>
                     <!-- <JVMArg>your-args</JVMArg> -->
                 </JVMArgs>
-                <mainClassName>com.jpro.hellojpro.HelloJProFXML</mainClassName>
+                <mainClassName>com.jpro.hellojpro.MainFXML</mainClassName>
                 <openingPath>/</openingPath>
             </configuration>
         </plugin>
@@ -56,6 +65,15 @@
             <id>jpro - sandec repository</id>
             <url>https://sandec.bintray.com/repo</url>
         </repository>
+        <repository>
+            <id>jfugue</id>
+            <url>https://maven.sing-group.org/repository/maven/</url>
+        </repository>
+
+        <repository>
+            <id>mvn</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+        </repository>
     </repositories>
 
 
@@ -64,30 +82,66 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
+            <exclusions>
+                <exclusion>
+                    <!-- served by tomcat-annotations-api instead -->
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javax</artifactId>
+                </exclusion>
+            </exclusions>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
+
+       <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
+            <exclusions>
+                <exclusion>
+
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javax</artifactId>
+                </exclusion>
+            </exclusions>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-swing</artifactId>
+            <exclusions>
+                <exclusion>
+
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javax</artifactId>
+                </exclusion>
+            </exclusions>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
+            <exclusions>
+                <exclusion>
+
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javax</artifactId>
+                </exclusion>
+            </exclusions>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
+            <exclusions>
+                <exclusion>
+
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javax</artifactId>
+                </exclusion>
+            </exclusions>
             <version>${javafx.version}</version>
             <scope>compile</scope>
         </dependency>
@@ -98,6 +152,22 @@
             <version>${jpro.version}</version>
             <scope>compile</scope>
         </dependency>
+
+       <dependency>
+            <groupId>jfugue</groupId>
+            <artifactId>jfugue</artifactId>
+            <version>${jfugue.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+<!--        <dependency>
+            <groupId>hu.blackbelt.karaf.features</groupId>
+            <artifactId>javax</artifactId>
+            <version>1.0.2</version>
+            <type>pom</type>
+        </dependency>-->
+
+
     </dependencies>
 
 

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="com.jpro.hellojpro.main_windowController">
+    <Accordion layoutY="-1.0" prefHeight="500.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <panes>
+            <TitledPane text="Practice">
+                <Pane fx:id="main_pane" prefHeight="200.0" prefWidth="200.0">
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" height="449.0" layoutX="-9.0" layoutY="-1.0"
+                               stroke="#ffffff00" strokeType="INSIDE" width="231.0">
+                        <fill>
+                            <LinearGradient startX="0.51111113684518" startY="1.0">
+                                <stops>
+                                    <Stop color="WHITE"/>
+                                    <Stop color="#ffffff00" offset="1.0"/>
+                                </stops>
+                            </LinearGradient>
+                        </fill>
+                    </Rectangle>
+                    <Line endX="790.0" layoutX="107.0" layoutY="116.0" startX="-100.0" strokeLineCap="ROUND"
+                          strokeWidth="2.0"/>
+                    <Button fx:id="play_button" layoutX="21.0" layoutY="14.0" mnemonicParsing="false"
+                            onAction="#play_button_pressed" text="Play"/>
+                    <Line endX="790.0" layoutX="107.0" layoutY="136.0" startX="-100.0" strokeLineCap="ROUND"
+                          strokeWidth="2.0"/>
+                    <Line endX="790.0" layoutX="107.0" layoutY="156.0" startX="-100.0" strokeLineCap="ROUND"
+                          strokeWidth="2.0"/>
+                    <Line endX="790.0" layoutX="107.0" layoutY="176.0" startX="-100.0" strokeLineCap="ROUND"
+                          strokeWidth="2.0"/>
+                    <Line endX="790.0" layoutX="107.0" layoutY="196.0" startX="-100.0" strokeLineCap="ROUND"
+                          strokeWidth="2.0"/>
+                    <Line endX="100.0" endY="53.0" layoutX="189.0" layoutY="265.0" startX="100.0"
+                          startY="-250.3333282470703" stroke="#25155980" strokeLineCap="ROUND"
+                          strokeWidth="4.0"/>
+                    <ProgressBar fx:id="sg_bar" layoutX="325.0" layoutY="356.0" prefHeight="50.0"
+                                 prefWidth="300.0" progress="0.5"/>
+                </Pane>
+            </TitledPane>
+            <TitledPane animated="false" text="Settings">
+                <Pane prefHeight="249.0" prefWidth="898.0">
+                    <GridPane layoutX="39.0" layoutY="19.0" prefHeight="395.0" prefWidth="812.0">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="315.0"
+                                               minWidth="10.0" prefWidth="197.66668701171875"/>
+                            <ColumnConstraints fillWidth="false" maxWidth="481.6666564941406"
+                                               minWidth="9.999979654947936" prefWidth="16.000040690104186"/>
+                            <ColumnConstraints fillWidth="false" maxWidth="597.9999593098958" minWidth="10.0"
+                                               prefWidth="597.9999593098958"/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints maxHeight="44.33332824707031" minHeight="10.0"
+                                            prefHeight="39.666656494140625" vgrow="SOMETIMES"/>
+                            <RowConstraints maxHeight="95.33334350585938" minHeight="10.0"
+                                            prefHeight="89.33334350585938" vgrow="SOMETIMES"/>
+                            <RowConstraints maxHeight="62.66666666666666" minHeight="10.0"
+                                            prefHeight="58.00001017252603" vgrow="SOMETIMES"/>
+                            <RowConstraints maxHeight="40.666656494140625" minHeight="10.0"
+                                            prefHeight="30.666656494140625" vgrow="SOMETIMES"/>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        </rowConstraints>
+                        <Label text="BPM:"/>
+                        <Label text="Figures:" GridPane.rowIndex="1"/>
+                        <Label text="Notes:" GridPane.rowIndex="2"/>
+                        <Label text="Max Interval:" GridPane.rowIndex="3"/>
+                        <Label text="Lowest Note:" GridPane.rowIndex="4"/>
+                        <Label text="Highest Note:" GridPane.rowIndex="5"/>
+                        <Label text="Accident Preference:" GridPane.rowIndex="6"/>
+                        <Spinner fx:id="sg_BPM" editable="true" prefHeight="26.0" prefWidth="107.0"
+                                 GridPane.columnIndex="2"/>
+                        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <CheckBox fx:id="sg_C" mnemonicParsing="false" text="C"
+                                      GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_Db" mnemonicParsing="false" text="C# / Db"
+                                      GridPane.rowIndex="2"/>
+                            <CheckBox fx:id="sg_D" mnemonicParsing="false" text="D"
+                                      GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_Eb" mnemonicParsing="false" text="D# / Eb"
+                                      GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                            <CheckBox fx:id="sg_E" mnemonicParsing="false" text="E"
+                                      GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_F" mnemonicParsing="false" text="F"
+                                      GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                            <CheckBox fx:id="sg_Gb" mnemonicParsing="false" text="F# / Gb"
+                                      GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_G" mnemonicParsing="false" text="G"
+                                      GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+                            <CheckBox fx:id="sg_Ab" mnemonicParsing="false" text="G# / Ab"
+                                      GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_A" mnemonicParsing="false" text="A"
+                                      GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+                            <CheckBox fx:id="sg_Bb" mnemonicParsing="false" text="A# / Bb"
+                                      GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+                            <CheckBox fx:id="sg_B" mnemonicParsing="false" text="B"
+                                      GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+                        </GridPane>
+                        <Spinner fx:id="sg_maxInt" editable="true" prefHeight="26.0" prefWidth="107.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+                        <Spinner fx:id="sg_LowNote" editable="true" prefHeight="26.0" prefWidth="107.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+                        <Spinner fx:id="sg_HighNote" editable="true" prefHeight="26.0" prefWidth="107.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+                        <Spinner fx:id="sg_sharp" editable="true" prefHeight="26.0" prefWidth="108.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+                        <GridPane prefHeight="96.0" prefWidth="489.0" GridPane.columnIndex="2"
+                                  GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <CheckBox fx:id="sg_Quarter" mnemonicParsing="false"
+                                      GridPane.columnIndex="2">
+                                <graphic>
+                                    <ImageView fitHeight="70.0" fitWidth="36.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@../hellojpro/pics/Quarter.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </CheckBox>
+                            <CheckBox fx:id="sg_Eighth" mnemonicParsing="false"
+                                      GridPane.columnIndex="3">
+                                <graphic>
+                                    <ImageView fitHeight="53.0" fitWidth="53.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@../hellojpro/pics/Eighth_up.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </CheckBox>
+                            <CheckBox fx:id="sg_Half" mnemonicParsing="false" GridPane.columnIndex="1">
+                                <graphic>
+                                    <ImageView fitHeight="87.0" fitWidth="37.0" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@../hellojpro/pics/Half.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </CheckBox>
+                            <CheckBox fx:id="sg_Whole" mnemonicParsing="false">
+                                <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="28.0"
+                                               nodeOrientation="INHERIT" pickOnBounds="true"
+                                               preserveRatio="true">
+                                        <Image url="@../hellojpro/pics/Whole.png"/>
+                                    </ImageView>
+                                </graphic>
+                            </CheckBox>
+                        </GridPane>
+                        <Label text="Key Signature:" GridPane.rowIndex="7"/>
+                        <Spinner fx:id="sg_key" editable="true" prefHeight="26.0" prefWidth="108.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+                        <Label text="Clef:" GridPane.rowIndex="8"/>
+                        <Spinner fx:id="sg_clef" editable="true" prefHeight="26.0" prefWidth="108.0"
+                                 GridPane.columnIndex="2" GridPane.rowIndex="8"/>
+                    </GridPane>
+                    <GridPane layoutX="380.0" layoutY="246.0" prefHeight="42.0" prefWidth="456.0">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="173.3333536783854"
+                                               minWidth="10.0" prefWidth="170.00004069010416"/>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.33331298828125" minWidth="0.0"
+                                               prefWidth="15.6666259765625"/>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0"
+                                               prefWidth="270.0"/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        </rowConstraints>
+                        <Label text="Midi Device:"/>
+                        <ChoiceBox fx:id="sg_midi" prefHeight="28.0" prefWidth="265.0"
+                                   GridPane.columnIndex="2"/>
+                    </GridPane>
+                </Pane>
+            </TitledPane>
+        </panes>
+    </Accordion>
+</AnchorPane>

@@ -2900,3 +2900,43 @@ Caused by: java.io.FileNotFoundException: \com\jpro\hellojpro\pics\G-clef.png (T
 2020-10-24 14:36:04,010 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
 2020-10-24 14:36:04,340 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
 2020-10-24 14:36:24,943 [INFO] from com.jpro.activity in Thread-20 - Closing the server -> used memory: 187 MB  -  free system memory: 1162 MB
+2020-10-24 16:49:33,108 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-4 - Slf4jLogger started
+2020-10-24 16:49:34,077 [INFO] from play.api.Play in Thread-0 - Application started (Prod) (no global state)
+2020-10-24 16:49:35,207 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Enabling HTTP/2 on Akka HTTP server...
+2020-10-24 16:49:35,211 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /[0:0:0:0:0:0:0:0]:8080
+2020-10-24 16:49:35,814 [INFO] from com.jpro.activity in application-akka.actor.default-dispatcher-8 - Starting the server
+2020-10-24 16:49:35,814 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 -  *** Starting JPro: https://www.jpro.one/ ***
+2020-10-24 16:49:35,814 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - OS: Windows 10
+2020-10-24 16:49:35,831 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - JPro: 2020.1.0
+2020-10-24 16:49:35,831 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - Java version: 14.0.1
+2020-10-24 16:49:35,831 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - JVM: 14.0.1 Oracle Corporation
+2020-10-24 16:49:35,866 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - redirected OUT / ERR
+2020-10-24 16:49:35,866 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - installed SLF4JBridge
+2020-10-24 16:49:35,961 [INFO] from com.jpro.internal.server.MonocleInitializer$ in application-akka.actor.default-dispatcher-8 - screen: null
+2020-10-24 16:49:37,093 [INFO] from com.jpro.internal.server.Initializer$ in application-akka.actor.default-dispatcher-8 - finished init!
+2020-10-24 16:49:37,094 [INFO] from com.jpro.internal.server.Initializer$ in JavaFX Application Thread - JavaFX version: 15.0.0.2-jpro+0-2020-09-30-150835
+2020-10-24 16:49:37,378 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Sat Oct 24 16:49:36 CEST 2020
+2020-10-24 16:49:37,381 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2020-10-24 16:49:38,999 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!SightReadMaster
+2020-10-24 16:49:39,023 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!SightReadMaster
+2020-10-24 16:49:39,028 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2020-10-24 16:49:39,031 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2020-10-24 16:49:39,032 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!SightReadMaster
+2020-10-24 16:49:39,683 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(sightreadmaster,com.jpro.hellojpro.MainFXML,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/SightReadMaster,1280.0,619.0,false,en,List(en, de-DE, en-US, pt-BR, pt, de),csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y,Map(csrftoken -> jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y, Idea-89ab94d4 -> 8868befc-9fd4-4441-af7d-31d29810825f),Map(Host -> List(localhost:8080), Cookie -> List(Idea-89ab94d4=8868befc-9fd4-4441-af7d-31d29810825f; csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:61526), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en,de-DE;q=0.9,de;q=0.8,en-US;q=0.7,pt-BR;q=0.6,pt;q=0.5), Raw-Request-URI -> List(/app/0!SightReadMaster), Tls-Session-Info -> List(Session(1603550975568|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(dYtaduHA8YeYbL49sQC5lQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/Materializers/StreamSupervisor-0/$$g-actorRefSource#-1639749016]
+2020-10-24 16:49:42,636 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 590 userid: 1734158791
+2020-10-24 16:49:47,166 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@469003a9
+2020-10-24 16:49:47,269 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@2d1c28b0
+2020-10-24 16:49:47,386 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@36b9557e
+2020-10-24 16:49:47,453 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@53be26c7
+2020-10-24 16:49:47,799 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@5204dc58
+2020-10-24 16:49:47,829 [INFO] from com.jpro.meta.stream.Util$ in JavaFX Application Thread - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@64ffadcb
+2020-10-24 16:49:57,381 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2020-10-24 16:49:57,381 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2020-10-24 16:49:57,385 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Sat Oct 24 16:49:57 CEST 2020      
+2020-10-24 16:49:57,385 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.002 
+2020-10-24 16:49:57,385 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.000  
+2020-10-24 16:49:57,388 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2020-10-24 16:49:57,389 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2020-10-24 16:49:57,389 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 499516
+2020-10-24 16:49:57,389 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 90619
+2020-10-24 16:49:57,389 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 

@@ -1723,3 +1723,37 @@
 2020-10-24 14:36:04,014 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - 
 2020-10-24 14:36:04,340 [INFO] in scala-execution-context-global-54 - [info] c.j.i.c.InstanceImpl - closing window!
 2020-10-24 14:36:24,945 [INFO] in scala-execution-context-global-54 - [info] c.jpro.activity - Closing the server -> used memory: 187 MB  -  free system memory: 1162 MB
+2020-10-24 16:49:37,095 [INFO] in scala-execution-context-global-39 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-10-24 16:49:37,096 [INFO] in scala-execution-context-global-39 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-10-24 16:49:37,097 [INFO] in scala-execution-context-global-39 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-10-24 16:49:37,098 [INFO] in scala-execution-context-global-39 - [info] c.j.i.s.Initializer$ - finished init!
+2020-10-24 16:49:37,099 [INFO] in scala-execution-context-global-39 - [info] c.j.i.s.Initializer$ - JavaFX version: 15.0.0.2-jpro+0-2020-09-30-150835
+2020-10-24 16:49:37,379 [INFO] in scala-execution-context-global-57 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Sat Oct 24 16:49:36 CEST 2020
+2020-10-24 16:49:37,382 [INFO] in scala-execution-context-global-57 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-10-24 16:49:39,000 [INFO] in scala-execution-context-global-57 - [info] c.jpro - application requested: 0!SightReadMaster
+2020-10-24 16:49:39,024 [INFO] in scala-execution-context-global-57 - [info] c.jpro - Creating Application: 0!SightReadMaster
+2020-10-24 16:49:39,029 [INFO] in scala-execution-context-global-57 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-10-24 16:49:39,032 [INFO] in scala-execution-context-global-57 - [info] c.jpro - host          localhost:8080
+2020-10-24 16:49:39,032 [INFO] in scala-execution-context-global-57 - [info] c.jpro - uri           /app/0!SightReadMaster
+2020-10-24 16:49:39,683 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(sightreadmaster,com.jpro.hellojpro.MainFXML,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/SightReadMaster,1280.0,619.0,false,en,List(en, de-DE, en-US, pt-BR, pt, de),csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y,Map(csrftoken -> jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y, Idea-89ab94d4 -> 8868befc-9fd4-4441-af7d-31d29810825f),Map(Host -> List(localhost:8080), Cookie -> List(Idea-89ab94d4=8868befc-9fd4-4441-af7d-31d29810825f; csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:61526), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en,de-DE;q=0.9,de;q=0.8,en-US;q=0.7,pt-BR;q=0.6,pt;q=0.5), Raw-Request-URI -> List(/app/0!SightReadMaster), Tls-Session-Info -> List(Session(1603550975568|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(dYtaduHA8YeYbL49sQC5lQ==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/Materializers/StreamSupervisor-0/$$g-actorRefSource#-1639749016]
+2020-10-24 16:49:42,638 [INFO] in scala-execution-context-global-57 - [info] com.jpro.JS - received msg: new MainID: 590 userid: 1734158791
+2020-10-24 16:49:47,166 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@469003a9
+2020-10-24 16:49:47,270 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@2d1c28b0
+2020-10-24 16:49:47,390 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@36b9557e
+2020-10-24 16:49:47,453 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@53be26c7
+2020-10-24 16:49:47,602 [INFO] in scala-execution-context-global-57 - Error
+2020-10-24 16:49:47,604 [ERROR] in scala-execution-context-global-57 - java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 4
+2020-10-24 16:49:47,606 [ERROR] in scala-execution-context-global-57 - 	at com.jpro.hellojpro.CatchNotes.run(CatchNotes.java:28)
+2020-10-24 16:49:47,610 [ERROR] in scala-execution-context-global-57 - 	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-10-24 16:49:47,802 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@5204dc58
+2020-10-24 16:49:47,830 [INFO] in scala-execution-context-global-57 - [info] c.j.m.s.Util$ - workaround for image, lossless: true filetype: png img: javafx.scene.image.Image@64ffadcb
+2020-10-24 16:49:57,381 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - 
+2020-10-24 16:49:57,382 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-10-24 16:49:57,393 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - startTime      : Sat Oct 24 16:49:57 CEST 2020      
+2020-10-24 16:49:57,395 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.002 
+2020-10-24 16:49:57,396 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.000  
+2020-10-24 16:49:57,397 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-10-24 16:49:57,400 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-10-24 16:49:57,406 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - raw            : 499516
+2020-10-24 16:49:57,410 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - zipped         : 90619
+2020-10-24 16:49:57,412 [INFO] in scala-execution-context-global-57 - [info] c.j.i.s.ViewInfo$ - 

@@ -27,7 +27,10 @@
         <artifactId>heroku-maven-plugin</artifactId>
         <version>3.0.3</version>
         <configuration>
-  <appName>sight-reading-trainer-app</appName>
+                  <appName>sight-reading-trainer-app</appName>
+                   <processTypes>
+                            <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                  </processTypes>
         </configuration>
       </plugin>
         <plugin>

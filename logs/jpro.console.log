@@ -1723,3 +1723,83 @@
 2020-10-24 14:36:04,014 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - 
 2020-10-24 14:36:04,340 [INFO] in scala-execution-context-global-54 - [info] c.j.i.c.InstanceImpl - closing window!
 2020-10-24 14:36:24,945 [INFO] in scala-execution-context-global-54 - [info] c.jpro.activity - Closing the server -> used memory: 187 MB  -  free system memory: 1162 MB
+2020-10-27 10:51:54,145 [INFO] in scala-execution-context-global-40 - [info] c.j.i.s.Initializer$ - redirected OUT / ERR
+2020-10-27 10:51:54,147 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.Initializer$ - installed SLF4JBridge
+2020-10-27 10:51:54,149 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.MonocleInitializer$ - screen: null
+2020-10-27 10:51:54,149 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.Initializer$ - finished init!
+2020-10-27 10:51:54,149 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.Initializer$ - JavaFX version: 15.0.0.2-jpro+0-2020-09-30-150835
+2020-10-27 10:51:54,518 [INFO] in scala-execution-context-global-55 - [info] c.j.i.c.m.ChartJSONImExporter - Imported chart data Tue Oct 27 10:51:53 CET 2020
+2020-10-27 10:51:54,522 [INFO] in scala-execution-context-global-55 - [info] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2020-10-27 10:51:56,883 [INFO] in scala-execution-context-global-55 - [info] c.jpro - application requested: 0!SightReadMaster
+2020-10-27 10:51:56,914 [INFO] in scala-execution-context-global-55 - [info] c.jpro - Creating Application: 0!SightReadMaster
+2020-10-27 10:51:56,918 [INFO] in scala-execution-context-global-55 - [info] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2020-10-27 10:51:56,924 [INFO] in scala-execution-context-global-55 - [info] c.jpro - host          localhost:8080
+2020-10-27 10:51:56,927 [INFO] in scala-execution-context-global-55 - [info] c.jpro - uri           /app/0!SightReadMaster
+2020-10-27 10:51:57,548 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewSerializerActor - appdef: AppByMain(sightreadmaster,com.jpro.hellojpro.MainFXML,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/,http://localhost:8080/app/SightReadMaster,1280.0,619.0,false,en,List(en, de-DE, en-US, pt-BR, pt, de),csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y,Map(csrftoken -> jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y, Idea-89ab94d4 -> 8868befc-9fd4-4441-af7d-31d29810825f),Map(Host -> List(localhost:8080), Cookie -> List(Idea-89ab94d4=8868befc-9fd4-4441-af7d-31d29810825f; csrftoken=jSjBdeldEZPKCA5a1Qa5gh5F83P04DThhYdKz0N2z24yMkbeQKyFsWtot8E3Yw9y), Origin -> List(http://localhost:8080), Pragma -> List(no-cache), Upgrade -> List(websocket), Connection -> List(Upgrade), User-Agent -> List(Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36), Cache-Control -> List(no-cache), Remote-Address -> List(0:0:0:0:0:0:0:1:50171), Timeout-Access -> List(<function1>), Accept-Encoding -> List(gzip, deflate, br), Accept-Language -> List(en,de-DE;q=0.9,de;q=0.8,en-US;q=0.7,pt-BR;q=0.6,pt;q=0.5), Raw-Request-URI -> List(/app/0!SightReadMaster), Tls-Session-Info -> List(Session(1603792312524|SSL_NULL_WITH_NULL_NULL)), Sec-WebSocket-Key -> List(/waBfa0x/t2+LvrmlJFhHw==), UpgradeToWebSocket -> List(), Sec-WebSocket-Version -> List(13), Sec-WebSocket-Extensions -> List(permessage-deflate; client_max_window_bits)))out: Actor[akka://application/system/Materializers/StreamSupervisor-0/$$g-actorRefSource#1251016565]
+2020-10-27 10:52:00,510 [INFO] in scala-execution-context-global-55 - [info] com.jpro.JS - received msg: new MainID: 590 userid: 632792518
+2020-10-27 10:52:06,969 [INFO] in scala-execution-context-global-55 - [error] c.j.m.t.SceneInputListener - Error while processing the input: MouseEventToken(MouseReleased,30.0,43.333335876464844,MouseButtonToken(3),false,false,false,false,false,false,false,false) app: stage title: Sight Read Master
+2020-10-27 10:52:06,970 [INFO] in scala-execution-context-global-55 - java.lang.reflect.InvocationTargetException: null
+2020-10-27 10:52:06,970 [INFO] in scala-execution-context-global-55 - 	at jdk.internal.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:178)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:120)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at com.jpro.meta.tk.SceneInputListener.processInputs(SceneInputListener.scala:101)
+2020-10-27 10:52:06,971 [INFO] in scala-execution-context-global-55 - 	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$4(SceneInputListener.scala:42)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:64)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:46)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - Caused by: java.lang.reflect.InvocationTargetException: null
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at jdk.internal.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:21)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:330)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:226)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:186)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at jdk.internal.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:06,972 [INFO] in scala-execution-context-global-55 - Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1862)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1729)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - Caused by: java.lang.reflect.InvocationTargetException: null
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:06,973 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:76)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:273)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - Caused by: java.io.FileNotFoundException: \pics\flat.png (The system cannot find the path specified)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/java.io.FileInputStream.open0(Native Method)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/java.io.FileInputStream.open(FileInputStream.java:212)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:154)
+2020-10-27 10:52:06,974 [INFO] in scala-execution-context-global-55 - 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:109)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at com.jpro.hellojpro.Signature.addSignature(Signature.java:77)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at com.jpro.hellojpro.main_windowController.play_button_pressed(main_windowController.java:119)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2020-10-27 10:52:06,975 [INFO] in scala-execution-context-global-55 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+2020-10-27 10:52:14,144 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - 
+2020-10-27 10:52:14,147 [INFO] in scala-execution-context-global-55 - [info] c.j.i.s.ViewInfo$ - Application closed:
+2020-10-27 10:52:14,151 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - startTime      : Tue Oct 27 10:52:14 CET 2020      
+2020-10-27 10:52:14,158 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.011 
+2020-10-27 10:52:14,164 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.011  
+2020-10-27 10:52:14,166 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2020-10-27 10:52:14,167 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2020-10-27 10:52:14,176 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - raw            : 567548
+2020-10-27 10:52:14,181 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - zipped         : 100373
+2020-10-27 10:52:14,182 [INFO] in scala-execution-context-global-53 - [info] c.j.i.s.ViewInfo$ - 

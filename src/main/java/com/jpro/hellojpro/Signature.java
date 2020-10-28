@@ -74,9 +74,9 @@ public class Signature {
     }
 
     public Group addSignature() throws FileNotFoundException {
-        Image F_path = new Image(new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/flat.png").getFile()));
-        Image S_path = new Image(new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/sharp.png").getFile()));
-        Image E_path = new Image(new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/empty.png").getFile()));
+        Image F_path = new Image(new FileInputStream("/pics/flat.png"));
+        Image S_path = new Image(new FileInputStream("/pics/sharp.png"));
+        Image E_path = new Image(new FileInputStream("/pics/empty.png"));
         ImageView FS_imageView;
         Group group = new Group();
         int offset_X = 0;
@@ -132,7 +132,7 @@ public class Signature {
         }
 
         if (this.clef.equals("Tremble")) {
-            Image C_path = new Image(new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/G-clef.png").getFile()));
+            Image C_path = new Image(new FileInputStream("/pics/G-clef.png"));
             ImageView C_imageView = new ImageView(C_path);
             C_imageView.setFitHeight(176);
             C_imageView.setPreserveRatio(true);
@@ -141,7 +141,7 @@ public class Signature {
             group.getChildren().add(C_imageView);
             clef_switch = 0;
         } else if (this.clef.equals("Bass")) {
-            Image C_path = new Image(new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/F-clef.png").getFile()));
+            Image C_path = new Image(new FileInputStream("/pics/F-clef.png"));
             ImageView C_imageView = new ImageView(C_path);
             C_imageView.setPreserveRatio(true);
             C_imageView.setFitHeight(70);

@@ -29,7 +29,7 @@ public class MainFXML extends JProApplication {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/jpro/hellojpro/main_window.fxml"));
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/com/jpro/hellojpro/main_window.fxml"));
         Scene scene = null;
 
         AnchorPane root = loader.load();

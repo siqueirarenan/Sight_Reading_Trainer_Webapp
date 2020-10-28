@@ -105,11 +105,12 @@ public class main_windowController implements Initializable {
             MainFXML.user.setI_clef(sg_clef.getValue());
             MainFXML.user.setI_midi(sg_midi.getValue());
 
-            String fileName = "src/UserInputs.srmr";
+            //No saving users configuration in the web app
+/*            String fileName = "UserInputs.srmr";
             FileOutputStream fos = new FileOutputStream(fileName);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(MainFXML.user);
-            oos.close();
+            oos.close();*/
 
             piano = new Keyboard(88, 0,
                     9, MainFXML.user.getSharpPreference().equals("Sharp"));
@@ -239,12 +240,13 @@ public class main_windowController implements Initializable {
                 midi_List.add(i.getName() + " - " + i.getVendor() + " - " + i.getDescription());
             }
         } catch (MidiUnavailableException e) {
+            midi_List.add("Midi Instrument Unavailable");
             e.printStackTrace();
         }
 
 
         try {
-            String fileName = "src/UserInputs.srmr";
+            String fileName = "UserInputs.srmr";
             FileInputStream fin = new FileInputStream(fileName);
             ObjectInputStream ois = new ObjectInputStream(fin);
             UserInputs user = (UserInputs) ois.readObject();

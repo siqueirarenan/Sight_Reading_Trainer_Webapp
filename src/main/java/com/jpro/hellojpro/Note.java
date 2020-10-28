@@ -58,9 +58,9 @@ public class Note {
 	public Note Generate() throws FileNotFoundException {
 		FileInputStream pic_input;
 		if (!this.duration_name.equals("Eighth")) {
-			pic_input = new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/"+ this.duration_name + ".png").getFile());
+			pic_input = new FileInputStream("/pics/"+ this.duration_name + ".png");
 		}else{
-			pic_input = new FileInputStream(getClass().getResource("/com/jpro/hellojpro/pics/"+ this.duration_name + "_up.png").getFile());
+			pic_input = new FileInputStream("/pics/"+ this.duration_name + "_up.png");
 		}
 		Image image = new Image(pic_input);
 		ImageView imageView = new ImageView(image);
@@ -89,16 +89,16 @@ public class Note {
 		if(note_name.length()==3 && !MainFXML.controller.signature.accidents.contains(note_name.substring(0,2))) {
 			switch (note_name.charAt(1)) {
 				case '#':
-					FS_path = getClass().getResource("/com/jpro/hellojpro/pics/sharp.png").getFile();
+					FS_path = "/pics/sharp.png";
 					break;
 				case 'b':
-					FS_path = getClass().getResource("/com/jpro/hellojpro/pics/flat.png").getFile();
+					FS_path = "/pics/flat.png";
 					break;
 			}
 		}else if (note_name.length()==2 && MainFXML.controller.signature.need_natural.contains(note_name.substring(0,1))){
-			FS_path = getClass().getResource("/com/jpro/hellojpro/pics/natural.png").getFile();
+			FS_path = "/pics/natural.png";
 		}else{
-			FS_path = getClass().getResource("/com/jpro/hellojpro/pics/empty.png").getFile();}
+			FS_path = "/pics/empty.png";}
 		Image FS_image = new Image(new FileInputStream(FS_path));
 		ImageView FS_imageView = new ImageView(FS_image);
 		FS_imageView.setFitHeight(62);

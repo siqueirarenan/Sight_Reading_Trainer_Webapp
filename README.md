@@ -4,7 +4,7 @@
 
 This project is a webapp version of the Java programan Sight Reading Trainer. To keep the app independent from specific browser's plug-in, this app was deplying using JPro, a virtual browser capable of running Java, including Javafx. The app was built using JPro through Maven, put into a Docker container and shipped to the following page, where it can be seen:
 
-[Sight Reading Trainer Webapp](https://sight-reading-trainer.heroku.com)
+[Sight Reading Trainer Webapp](https://sight-reading-trainer-webapp.herokuapp.com/)
 
 The use of the app is easy. For more information about it, please access the [original repository](https://github.com/siqueirarenan/Sight_Reading_Trainer).
 

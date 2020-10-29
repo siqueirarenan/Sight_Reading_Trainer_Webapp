@@ -136,10 +136,12 @@ public class main_windowController implements Initializable {
             }
 
             playON = 1;
+            play_button.setText("Stop");
             t1.start();
             t2.start();
         } else {
             playON = 0;
+            play_button.setText("Play");
             //LibUsb.exit(null);
             t1.interrupt();
             t2.interrupt();
